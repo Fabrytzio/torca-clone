@@ -12,26 +12,37 @@
     <link rel="stylesheet" href="css/app.css">
     <script src="https://kit.fontawesome.com/c2b641f912.js" crossorigin="anonymous"></script>
 </head>
-    <body>
-        
+    <body id="top">
+
         <nav class="contenedor-navegacion">
 
             <a href="index.html"> <img class="logo-torca" src="img/logo.jpg"></a>
             
             <div class="nav-categorias text-center">
                 <div> <a href="index.html">Inicio</a> </div>
-                <div> <a href="nosotros.html">Nosotros</a> </div>
                 <div> <a href="tienda.html">Tienda</a> </div>
                 <div> <a href="galeria.html">Galería</a> </div>
+                <div> <a href="nosotros.html">Nosotros</a> </div>
                 <div> <a href="contacto.html">Contacto</a> </div>
             </div>
 
-            <div>
-                <nav class="nav-usuarios">
-                    <li><a href="#"><i class="fas fa-shopping-cart"></i> </a></li>
-                    <li><a href="index.html"><i class="fas fa-user-alt"></i> </a></li>
-                </nav>
-            </div>
+            <nav class="nav-usuarios">
+
+                <li>
+                    <a href="#">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>Carrito</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html">
+                        <i class="fas fa-user-alt"></i> 
+                        <span>Ingreso</span>
+                    </a>
+                </li>
+            </nav>
+
         </nav>
 
         <div class="contenedor"><img src="img/principal.jpg"/></div>
@@ -71,7 +82,7 @@
         <div class="contenedor"><img src="img/banner-tarjetas.jpg"/></div>
 
         <main class="contenido-principal contenedor ">
-            <h2 class="text-center">Nuestros Productos</h2>
+            <h2 class="text-center">Productos Destacados</h2>
             
             <div class="listado-productos">
                 <div class="producto">
@@ -150,8 +161,98 @@
 
         <div class="contenedor"><img src="img/banner-salud.jpg"/></div>
 
+        <main class="contenido-principal contenedor">
+            <h2 class="text-center">Ofertas</h2>
+            
+            <div class="listado-productos">
+                <div class="producto">
+                    <img src="img/producto1.jpg" alt="Imagen Producto" >
+
+                    <div class="texto-producto">
+                        <h3>Producto 1</h3>
+                        <p>Proin condimentum sodales risus ut aliquet. Nunc eu neque quis sapien feugiat posuere sed nec mauris.</p>
+                        <p class="precio">$1,000,000.00</p>
+
+                        <a class="btn" href="#">Agregar al Carrito</a>
+                    </div>
+                </div>
+
+                <div class="producto">
+                    <img src="img/producto2.jpg" alt="Imagen Producto" >
+
+                    <div class="texto-producto">
+                        <h3>Producto 2</h3>
+                        <p>Proin condimentum sodales risus ut aliquet. Nunc eu neque quis sapien feugiat posuere sed nec mauris.</p>
+                        <p class="precio">$1,000,000.00</p>
+
+                        <a class="btn" href="#">Agregar al Carrito</a>
+                    </div>
+                </div>
+
+                <div class="producto">
+                    <img src="img/producto3.jpg" alt="Imagen Producto" >
+
+                    <div class="texto-producto">
+                        <h3>Producto 3</h3>
+                        <p>Proin condimentum sodales risus ut aliquet. Nunc eu neque quis sapien feugiat posuere sed nec mauris.</p>
+                        <p class="precio">$1,000,000.00</p>
+
+                        <a class="btn" href="#">Agregar al Carrito</a>
+                    </div> 
+                </div> 
+
+                <div class="producto">
+                    <img src="img/producto4.jpg" alt="Imagen Producto" >
+
+                    <div class="texto-producto">
+                        <h3>Producto 4</h3>
+                        <p>Proin condimentum sodales risus ut aliquet. Nunc eu neque quis sapien feugiat posuere sed nec mauris.</p>
+                        <p class="precio">$1,000,000.00</p>
+
+                        <a class="btn" href="#">Agregar al Carrito</a>
+                    </div>
+                </div>
+                <div class="producto">
+                    <img src="img/producto5.jpg" alt="Imagen Producto" >
+
+                    <div class="texto-producto">
+                        <h3>Producto 5</h3>
+                        <p>Proin condimentum sodales risus ut aliquet. Nunc eu neque quis sapien feugiat posuere sed nec mauris.</p>
+                        <p class="precio">$1,000,000.00</p>
+
+                        <a class="btn" href="#">Agregar al Carrito</a>
+                    </div>
+                </div> 
+
+                <div class="producto">
+                    <img src="img/producto6.jpg" alt="Imagen Producto" >
+
+                    <div class="texto-producto">
+                        <h3>Producto 6</h3>
+                        <p>Proin condimentum sodales risus ut aliquet. Nunc eu neque quis sapien feugiat posuere sed nec mauris.</p>
+                        <p class="precio">$1,000,000.00</p>
+
+                        <a class="btn" href="#">Agregar al Carrito</a>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        <div class="contenedor"><img src="img/banner-publicidad.jpg"/></div>
+
         <footer class="site-footer">
             <div class="grid-footer contenedor">
+                
+                <div>
+                    <h3>Comprar en torca</h3>
+                    <nav class="footer-menu">
+                        <a href="#">Medios de pago</a>
+                        <a href="#">Información de envío</a>
+                        <a href="#">Políticas de Privacidad</a>
+                    </nav>
+                </div>
+
                 <div>
                     <h3>Categorías</h3>
 
@@ -170,7 +271,6 @@
                         <a href="#">Nuestra Historia</a>
                         <a href="#">Misión, Visión y Valores</a>
                         <a href="#">Carreras</a>
-                        <a href="#">Política de Privacidad</a>
                         <a href="#">Términos del Servicio</a>
                     </nav>
                 </div>
@@ -186,8 +286,10 @@
 
             </div>
 
-            <p class="copyright">Todos los derechos Reservados, Torca</p>
+            <p class="copyright contenedor">Torca 2019 © Tienda online es propiedad de Macer S.A - CUIT N° 3371076250/9 - Administración central en AV. Eva Perón 1401 Ciudad de Trelew, Chubut - para más información info@torca.com.ar - Venta y Asesoramiento Online 0810-999-1519 - horarios de atención de lunes a viernes de 8 a 17:30</p>
         </footer>
+
+        <button class="float-btn" ><a href="#top">^</a></button> 
 
     </body>
 </html>

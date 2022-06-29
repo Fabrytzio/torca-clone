@@ -12,136 +12,155 @@
     <link rel="stylesheet" href="css/app.css">
     <script src="https://kit.fontawesome.com/c2b641f912.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    
-    <nav class="contenedor-navegacion">
-
-        <a href="index.html"> <img class="logo-torca" src="img/logo.jpg"></a>
+    <body>
         
-        <div class="nav-categorias">
-            <div> <a href="index.html">Inicio</a> </div>
-            <div> <a href="nosotros.html">Nosotros</a> </div>
-            <div> <a href="tienda.html">Tienda</a> </div>
-            <div> <a href="galeria.html">Galería</a> </div>
-            <div> <a href="contacto.html">Contacto</a> </div>
-        </div>
+        <nav class="contenedor-navegacion">
 
-        <div>
+            <a href="index.html"> <img class="logo-torca" src="img/logo.jpg"></a>
+            
+            <div class="nav-categorias text-center">
+                <div> <a href="index.html">Inicio</a> </div>
+                <div> <a href="tienda.html">Tienda</a> </div>
+                <div> <a href="galeria.html">Galería</a> </div>
+                <div> <a href="nosotros.html">Nosotros</a> </div>
+                <div> <a href="contacto.html">Contacto</a> </div>
+            </div>
+
             <nav class="nav-usuarios">
-                <li><a href="#"><i class="fas fa-shopping-cart"></i> </a></li>
-                <li><a href="login.html"><i class="fas fa-user-alt"></i> </a></li>
+
+                <li>
+                    <a href="#">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>Carrito</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html">
+                        <i class="fas fa-user-alt"></i> 
+                        <span>Ingreso</span>
+                    </a>
+                </li>
             </nav>
-        </div>
-    </nav>
 
-    
-    <main class="contenido-principal contenedor ">
-        <h2 class="text-center">Contacto</h2>
+        </nav>
 
-        <form class="formulario">
-            <fieldset>
-                <legend>Tus Datos</legend>
-                
-                <div class="campo">
-                    <label for="nombre">Nombre: </label>
-                    <input  id="nombre" type="text" placeholder="Tu Nombre" required>
-                </div>
-
-                <div class="campo">
-                    <label for="asunto">Asunto:</label>
-                    <input id="asunto" type="text" placeholder="Tu Asunto"  required>
-                </div>
-
-                <div class="campo">
-                    <label for="email">E-mail:</label>
-                    <input id="email" type="email" placeholder="Tu Email" >
-                </div>
-
-                <div class="campo">
-                    <label for="tel">Teléfono:</label>
-                    <input id="tel" type="tel" placeholder="Tu Teléfono" >
-                </div>
-
-                <div class="campo">
-                    <label for="tel">Mensaje:</label>
-                    <textarea rows="10" cols="20"></textarea>
-                </div>
-
-            </fieldset>
-
-            <fieldset>
-                <legend>Información Extra</legend>
-                
-                <div class="campo">
-                    <label for="cliente">Cliente</label>
-                    <input id="cliente" type="radio" name="tipo" value="cliente">
-                </div>
-
-                <div class="campo">
-                    <label for="proveedor">Proveedor</label>
-                    <input id="proveedor" type="radio" name="tipo" value="proveedor">
-                </div>
-
-                <div class="campo">
-                    <label for="categoria">Categoría de Interés</label>
-                    <input list="categorias" name="categorias">
-                    <datalist id="categorias">
-                        <option value="Cocina"/>
-                        <option value="Exterior"/>
-                        <option value="Recamaras"/>
-                        <option value="Oficina"/>
-                        <option value="Televisión"/>
-                    </datalist>
-                </div>
-
-            </fieldset>
-
-            <input class="btn" type="submit" value="Enviar Formulario" >
-        </form>
         
-    </main>
+        <main class="contenido-principal contenedor ">
+            <h2 class="text-center">Contacto</h2>
 
+            <form class="formulario">
+                <fieldset>
+                    <legend>Tus Datos</legend>
+                    
+                    <div class="campo">
+                        <label for="nombre">Nombre: </label>
+                        <input  id="nombre" type="text" placeholder="Tu Nombre" required>
+                    </div>
 
+                    <div class="campo">
+                        <label for="asunto">Asunto:</label>
+                        <input id="asunto" type="text" placeholder="Tu Asunto"  required>
+                    </div>
 
+                    <div class="campo">
+                        <label for="email">E-mail:</label>
+                        <input id="email" type="email" placeholder="Tu Email" >
+                    </div>
 
-    <footer class="site-footer">
-        <div class="grid-footer contenedor">
-            <div>
-                <h3>Categorías</h3>
+                    <div class="campo">
+                        <label for="tel">Teléfono:</label>
+                        <input id="tel" type="tel" placeholder="Tu Teléfono" >
+                    </div>
 
-                <nav class="footer-menu">
-                    <a href="#">Cocina</a>
-                    <a href="#">Oficina</a>
-                    <a href="#">Jardín</a>
-                    <a href="#">Cochera</a>
-                    <a href="#">Dormitorios</a>
-                </nav>
+                    <div class="campo">
+                        <label for="tel">Mensaje:</label>
+                        <textarea rows="10" cols="20"></textarea>
+                    </div>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Información Extra</legend>
+                    
+                    <div class="campo">
+                        <label for="cliente">Cliente</label>
+                        <input id="cliente" type="radio" name="tipo" value="cliente">
+                    </div>
+
+                    <div class="campo">
+                        <label for="proveedor">Proveedor</label>
+                        <input id="proveedor" type="radio" name="tipo" value="proveedor">
+                    </div>
+
+                    <div class="campo">
+                        <label for="categoria">Categoría de Interés</label>
+                        <input list="categorias" name="categorias">
+                        <datalist id="categorias">
+                            <option value="Cocina"/>
+                            <option value="Exterior"/>
+                            <option value="Recamaras"/>
+                            <option value="Oficina"/>
+                            <option value="Televisión"/>
+                        </datalist>
+                    </div>
+
+                </fieldset>
+
+                <input class="btn" type="submit" value="Enviar Formulario" >
+            </form>
+            
+        </main>
+
+        <footer class="site-footer">
+            <div class="grid-footer contenedor">
+                
+                <div>
+                    <h3>Comprar en torca</h3>
+                    <nav class="footer-menu">
+                        <a href="#">Medios de pago</a>
+                        <a href="#">Información de envío</a>
+                        <a href="#">Políticas de Privacidad</a>
+                    </nav>
+                </div>
+
+                <div>
+                    <h3>Categorías</h3>
+
+                    <nav class="footer-menu">
+                        <a href="#">Cocina</a>
+                        <a href="#">Oficina</a>
+                        <a href="#">Jardín</a>
+                        <a href="#">Cochera</a>
+                        <a href="#">Dormitorios</a>
+                    </nav>
+                </div>
+
+                <div>
+                    <h3>Sobre Nosotros</h3>
+                    <nav class="footer-menu">
+                        <a href="#">Nuestra Historia</a>
+                        <a href="#">Misión, Visión y Valores</a>
+                        <a href="#">Carreras</a>
+                        <a href="#">Términos del Servicio</a>
+                    </nav>
+                </div>
+
+                <div>
+                    <h3>Soporte</h3>
+                    <nav class="footer-menu">
+                        <a href="#">Preguntas Frecuentes</a>
+                        <a href="#">Ayuda en línea</a>
+                        <a href="#">Confianza y Seguridad</a>
+                    </nav>
+                </div>
+
             </div>
 
-            <div>
-                <h3>Sobre Nosotros</h3>
-                <nav class="footer-menu">
-                    <a href="#">Nuestra Historia</a>
-                    <a href="#">Misión, Visión y Valores</a>
-                    <a href="#">Carreras</a>
-                    <a href="#">Política de Privacidad</a>
-                    <a href="#">Términos del Servicio</a>
-                </nav>
-            </div>
+            <p class="copyright contenedor">Torca 2019 © Tienda online es propiedad de Macer S.A - CUIT N° 3371076250/9 - Administración central en AV. Eva Perón 1401 Ciudad de Trelew, Chubut - para más información info@torca.com.ar - Venta y Asesoramiento Online 0810-999-1519 - horarios de atención de lunes a viernes de 8 a 17:30</p>
+        </footer>
 
-            <div>
-                <h3>Soporte</h3>
-                <nav class="footer-menu">
-                    <a href="#">Preguntas Frecuentes</a>
-                    <a href="#">Ayuda en línea</a>
-                    <a href="#">Confianza y Seguridad</a>
-                </nav>
-            </div>
+        <button class="float-btn" ><a href="#top">^</a></button> 
 
-        </div>
-
-        <p class="copyright">Todos los derechos Reservados, Torca</p>
-    </footer>
-
-</body>
+    </body>
 </html>
