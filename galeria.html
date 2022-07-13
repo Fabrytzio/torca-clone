@@ -14,36 +14,52 @@
 </head>
 <body>
     
-    <nav class="contenedor-navegacion">
+    <header class="cabecera">
+                
+        <nav class="contenedor-navegacion">
 
-        <a href="index.html"> <img class="logo-torca" src="img/logo.jpg"></a>
-        
-        <div class="nav-categorias text-center">
-            <div> <a href="index.html">Inicio</a> </div>
-            <div> <a href="tienda.html">Tienda</a> </div>
-            <div> <a href="galeria.html">Galería</a> </div>
-            <div> <a href="nosotros.html">Nosotros</a> </div>
-            <div> <a href="contacto.html">Contacto</a> </div>
-        </div>
+            <a href="index.html"> <img class="logo-torca" src="img/logo.jpg"></a>
 
-        <nav class="nav-usuarios">
+            <div class="contenedor-buscador">
+                <form action="">
+                    <input type="text" placeholder="¿Qué estas buscando?" name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
 
-            <li>
-                <a href="#">
-                    <i class="fas fa-shopping-cart"></i>
-                    <span>Carrito</span>
-                </a>
-            </li>
+            <nav class="nav-usuarios">
 
-            <li>
-                <a href="index.html">
-                    <i class="fas fa-user-alt"></i> 
-                    <span>Ingreso</span>
-                </a>
-            </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>Carrito</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html">
+                        <i class="fas fa-user-alt"></i> 
+                        <span>Ingreso</span>
+                    </a>
+                </li>
+                
+            </nav>
+            
         </nav>
 
-    </nav>
+        <nav>
+            <ul class="lista-categorias">
+                <li><a href="#">Categorias</a></li>
+                <li><a href="#">Tv, Audio y Vídeo </a></li>
+                <li><a href="#">Celulares, Notebooks y Tecnologia </a></li>
+                <li><a href="#">Electrodomésticos </a></li>
+                <li><a href="#">Hogar, Muebles y Jardín </a></li>
+                <li><a href="#">Salud, Belleza y Fitness </a></li>
+                <li><a href="#">Bebes y niños </a></li>
+            </ul>
+        </nav>
+
+    </header>
 
     
     <main class="contenido-principal contenedor ">

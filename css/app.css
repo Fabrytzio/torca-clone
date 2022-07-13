@@ -147,16 +147,48 @@ img {
 
 /* Header y Navegacion */
 
-.contenedor-navegacion{
-    display: flex;
-    flex-direction: column;
+.cabecera {
     position: relative;
-    align-items: center;
-    justify-content: space-around;
-    justify-items: center;
     top: 0;
     background-color: rgb(255, 255, 255);
     border-bottom: 2px solid #e1e1e1;
+    z-index: 1;
+}
+
+.contenedor-navegacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    justify-items: center;
+    border-bottom: 2px solid #e1e1e1;
+}
+
+.contenedor-buscador form {
+    position: relative;
+}
+
+.contenedor-buscador form input {
+    width: 60rem;
+    height: 4.5rem;
+    border: 2px solid #e1e1e1;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.contenedor-buscador form button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 50px;
+    background: rgb(250, 30, 30);;
+    border: transparent;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    outline: 0;
+    border-radius: 5px;
 }
 
 .info-credito {
@@ -194,7 +226,7 @@ img {
     align-items: center;
 }
 
-.nav-categorias a {
+.nav-categorias  a {
     color: rgba(0, 0, 0, 0.8);
     font-size: 24px;
     font-weight: 400;
@@ -232,6 +264,40 @@ img {
     color: rgb(250, 30, 30);
 }
 
+.nav-lista-categorias{
+    display: flex;
+    margin: 1rem 0 1rem 0;
+}
+
+.lista-categorias{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    white-space: nowrap;
+    padding: 0px;
+    margin: auto;
+}
+
+.lista-categorias li {
+    list-style: none;
+}
+
+.lista-categorias  a {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 1.4rem;
+    transition: all ease 300ms; 
+    cursor: pointer;
+    letter-spacing: -0.4px;
+    padding: 0.9em 0;
+    margin: 0 10px;
+}
+
+.lista-categorias a:hover{
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid rgb(250, 30, 30);
+}
+
+
 .banner {
     background-repeat: no-repeat;
     background-size: cover;
@@ -244,6 +310,10 @@ img {
 
 @media (min-width: 768px) {     
 
+    .cabecera {
+        position: sticky;
+    }
+
     .info-credito {
         flex-direction: row;
     }
@@ -251,7 +321,6 @@ img {
     .contenedor-navegacion {
         display: flex;
         flex-direction: row;
-        position: sticky;
     }
 
     .nav-categorias {
@@ -423,9 +492,21 @@ span a {
 span a:hover {
     color: #004f64;
 }
-    
+
+.fav {
+    position: absolute;
+    color: #0294bd;
+    font-size: 2.5rem;
+    bottom: 66rem;
+    right: 1rem;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
 .compra-producto{
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
@@ -453,7 +534,7 @@ span a:hover {
 .precio-producto{
     font-size: 3rem;
     font-weight: 500;
-    color: rgba(0, 0, 0, 0.8);
+    color: #0294bd;
 }
 
 .slt-cantidad {
