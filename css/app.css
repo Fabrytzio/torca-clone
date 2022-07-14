@@ -358,6 +358,41 @@ dialog {
     margin-bottom: 2rem;
 }
 
+.categorias-carrusel {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+    padding: 2rem;
+}
+
+.categorias-carrusel div {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.categorias-carrusel div span {
+    margin: 1rem;
+}
+
+.categorias-carrusel div img {
+    width: 120px;
+    height: 120px;
+    background-size: cover;
+    display: block;
+    border-radius: 50%;
+}
+
+.categorias-carrusel div:hover{
+    transform: scale(1.1);
+    color: #0294bd;
+}
+
 @media (min-width: 768px) {     
 
     .cabecera {
