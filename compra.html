@@ -77,12 +77,34 @@
                     <span class="precio-producto">$100.000</span>
                     <span>Desde <strong>12 </strong>cuotas fijas de $12.000 con <strong>Tarjeta de Crédito</strong></span>
                     <span><a href="#">Ver otros medios de pago <i class="fas fa-credit-card"></i></a></span>
-                    <button class="btn-producto">
+                    
+                    <button class="btn-producto" onclick="openModal()">
                         Calcular costo de envío
                         <i class="fas fa-truck"></i>
                     </button>
-                    <span>Marca: <strong>Color Living</strong> | <span>Color: <strong>Gris</strong></span> </span>
+
+                    <dialog class="modal" id="modal-envio">
+
+                        <div>
+                            <h1>Ingresá tu código postal</h1>
+                            <p>para ver las mejores opciones de envío y retiro</p>
+                        </div>
+                        
+                        <div style="margin: 20px 0px;">
+                            <form style="margin-bottom: 5px;">
+                                <div style="margin: 16px 0px 8px">
+                                    <input type="tel" pattern="[0-9]*" placeholder="Ej: 9011">
+                                    <button type="submit">Guardar</button>
+                                </div>
+                            </form>
+                            <a href="https://oca.com.ar">No sé mi código</a>
+                        </div>
+                        
+                        <button onclick="closeModal()">X</button>
                     
+                    </dialog>
+                    
+                    <span>Marca: <strong>Color Living</strong> | <span>Color: <strong>Gris</strong></span> </span>
                     
                     <div>Cantidad: 
                         <select class="slt-cantidad">
@@ -175,5 +197,6 @@
 
         <button class="float-btn" ><a href="#top">^</a></button> 
 
+        <script src="js/app.js"></script>
     </body>
 </html>
