@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Torca - Articulos para el hogar, Electrodomesticos, Tecnologia</title>
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/app.css">
-        <script src="https://kit.fontawesome.com/c2b641f912.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torca - Articulos para el hogar, Electrodomesticos, Tecnologia</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+    <script src="https://kit.fontawesome.com/c2b641f912.js" crossorigin="anonymous"></script>
+</head>
+    <body id="top">
 
         <header class="cabecera">
             
@@ -110,98 +110,77 @@
             </nav>
     
         </header>
+        
+        <main class="contenedor">
             
-        <main class="contenido-principal contenedor">
+            <div class="carrito-contenedor">
+                <div class="carrito-contenido">
 
-            <div class="contenedor-flex">
-                <img class="foto-producto" src="img/producto3.jpg"></img>
+                    <h1 class="carrito-titulo">Mi carrito de compra</h1>
 
-                <div class="compra-producto"> 
-                    
-                    <button class="fav">
-                        <i class="far fa-heart"></i>
-                    </button>
-
-                    <h1>Sofa Color Living Milan</h1>
-
-                    <span class="precio-producto">$100.000</span>
-                    <span>Desde <strong>12 </strong>cuotas fijas de $12.000 con <strong>Tarjeta de Crédito</strong></span>
-                    <span><a href="#">Ver otros medios de pago <i class="fas fa-credit-card"></i></a></span>
-                    
-                    <button class="btn-producto" onclick="openModal()">
-                        Calcular costo de envío
-                        <i class="fas fa-truck"></i>
-                    </button>
-
-                    <dialog class="modal" id="modal-envio">
-
-                        <div>
-                            <h1>Ingresá tu código postal</h1>
-                            <p>para ver las mejores opciones de envío y retiro</p>
-                        </div>
-                        
-                        <div style="margin: 20px 0px;">
-                            <form style="margin-bottom: 5px;">
-                                <div style="margin: 16px 0px 8px">
-                                    <input type="tel" pattern="[0-9]*" placeholder="Ej: 9011">
-                                    <button type="submit">Guardar</button>
+                    <ol>
+                        <li class="carrito-li">
+                            <div class="carrito-item">
+                                
+                                <a href="compra.html">
+                                    <img src="img/producto3.jpg">
+                                </a>
+                                
+                                <a href="compra.html">
+                                    <span class="carrito-item-titulo">Sofa Color Living Milan</span>
+                                </a> 
+                                
+                                <div class="carrito-cantidad">
+                                    <i class="fas fa-minus"></i>
+                                    <span>1</span>
+                                    <i class="fas fa-plus"></i>
                                 </div>
-                            </form>
-                            <a href="https://oca.com.ar">No sé mi código</a>
+                                
+                                <span class="carrito-item-precio">$100.000</span>
+                                
+                                <a href="#"><i class="fas fa-trash"></i></a>
+                            </div>
+                        </li>
+                    </ol>
+
+                </div>
+
+                <div class="carrito-pago">
+
+                    <h1 class="carrito-titulo">Resumen del pedido</h1>
+
+                    <div class="carrito-terminarcompra">
+                        <div class="carrito-total">
+                            <span>Total</span>
+                            <span>$100.000</span>
                         </div>
-                        
-                        <button onclick="closeModal()">X</button>
-                    
-                    </dialog>
-                    
-                    <span>Marca: <strong>Color Living</strong> | <span>Color: <strong>Gris</strong></span> </span>
-                    
-                    <div>Cantidad: 
-                        <select class="slt-cantidad">
-                            <option>1 unidad</option>
-                            <option>2 unidades</option>
-                            <option>3 unidades</option>
-                            <option>Más de 3 unidades</option>
-                        </select>
-                        <span class="stock-disponible">(4) disponibles</span> 
+
+                        <div class="carrito-div-btns">
+                            <button>
+                                Finalizar Compra
+                            </button>
+
+                            <button>
+                                Seguir comprando
+                            </button>    
+                        </div>
                     </div>
                     
-                    <button class="btn-producto">
-                        <a href="carrito.html">
-                            Comprar ahora
-                        </a>
-                    </button>
-                    <button class="btn-producto">Agregar al carrito</button>
-                
+                    <form class="carrito-cupon" style="margin-bottom: 5px;">
+                        <p>¿Tienes un cupón de descuento?</p>
+                        <div style="margin: 16px 0px 16px">
+                            <input type="text" placeholder="Ingrese el número del cupón">
+                            <button type="submit">Aplicar</button>
+                        </div>
+                    </form>
+
                 </div>
+
             </div>
 
         </main>
-        
+
         <footer class="site-footer">
-            
-            <div class="contenedor info-credito">
-
-                <img src="img/credi.jpg" alt="torca-credito">
-    
-                <div>
-                    <strong>Encontrá tu asesor desde tu sucursal</strong>
-                    <p class="bold colorless">Respondemos tus consultas - </p>
-                    <a class="colorless" href="#"><strong>Ver información</strong></a>
-                </div>
-    
-                <div>
-                    <strong>Contacto por WhatsApp</strong>
-                    <p class="bold colorless"> 280 - 4690329 </p>
-                    <p>Lunes a Viernes de 9:00 a 18:00hs</p>
-                </div>
-    
-                <div>
-                    <strong>Atención al cliente</strong>
-                    <p class="bold"><a class="colorless" href="mailto:info@torca.com.ar">info@torca.com.ar</a></p>
-                </div>
-            </div>
-
             <div class="grid-footer contenedor">
                 
                 <div>
@@ -251,6 +230,5 @@
 
         <button class="float-btn" ><a href="#top">^</a></button> 
 
-        <script src="js/app.js"></script>
     </body>
 </html>

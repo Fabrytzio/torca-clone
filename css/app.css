@@ -899,20 +899,20 @@ span a:hover {
 }
 
 .form-class input[type=text]:focus{
-    outline: 1px solid rgb(250, 30, 30);;
+    outline: 1px solid rgb(250, 30, 30);
 }
 
 .form-class input[type=email]:focus{
-    outline: 1px solid rgb(250, 30, 30);;
+    outline: 1px solid rgb(250, 30, 30);
 }
 
 .form-class input[type=password]:focus{
-    outline: 1px solid rgb(250, 30, 30);;
+    outline: 1px solid rgb(250, 30, 30);
 }
 
 .form-class input[type=submit]:hover {
     color: white;
-    background-color: rgb(250, 30, 30);;
+    background-color: rgb(250, 30, 30);
 }
 
 .form-class p{
@@ -987,4 +987,172 @@ span a:hover {
 
 .grid-contenedor ul li {
     list-style: none;
+}
+
+/* Carrito */
+
+.carrito-contenedor {
+    display: flex;
+    justify-items: center;
+    gap: 2rem;
+}
+
+.carrito-contenido {
+    border-radius: 5px;
+    width: auto;
+    height: max-content;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.carrito-contenido ol {
+    padding: 0;
+}
+
+.carrito-titulo {
+    font-size: 2rem;
+}
+
+.carrito-li {
+    list-style: none;
+    border-top: 1px solid #e1e1e1;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.carrito-item {
+    display: inline-flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 4rem;
+}
+
+.carrito-item img {
+    width: 150px;
+}
+
+.carrito-item a i {
+    font-size: 2rem;
+    transition: all 300ms ease;
+}
+
+.carrito-item a i:hover {
+    color: rgb(250, 30, 30);
+}
+
+.carrito-item-titulo {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.31;
+    letter-spacing: -.3px;
+}
+
+.carrito-item-precio {
+    font-size: 1.6rem;
+    letter-spacing: -.4px;
+    white-space: nowrap;
+    font-weight: 500;
+}
+
+.carrito-cantidad {
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.carrito-cantidad span {
+    margin: 1rem;
+}
+
+.carrito-cantidad i {
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.carrito-cantidad i:hover {
+    color: rgb(250, 30, 30);
+}
+
+.carrito-pago {
+    border-radius: 5px;
+    flex-grow: 1;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.carrito-terminarcompra{
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.carrito-total {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.carrito-total span {
+    font-size: 2.6rem;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.06;
+    letter-spacing: -.2px;
+}
+
+.carrito-cupon {
+    border: 1px solid #e1e1e1;
+}
+
+.carrito-cupon div input[type=text] {
+    width: 65%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.carrito-pago div input[type=text]:focus{
+    outline: 1px solid rgb(250, 30, 30);
+}
+
+.carrito-cupon button {
+    width: 30%;
+    height: 4.4rem;
+    background-color: rgb(250, 30, 30);
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.carrito-div-btns {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.carrito-div-btns button {
+    color: rgb(250, 30, 30);
+    background-color: #FFF;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    height: 4rem;
+    width: 80%;
+    border: 1px solid rgb(250, 30, 30);
+    transition: all 300ms ease;
+    cursor: pointer;
+}
+
+.carrito-div-btns button:hover {
+    background-color: rgb(250, 30, 30);
+    color: #FFF;
 }
